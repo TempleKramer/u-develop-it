@@ -22,6 +22,7 @@ const db = mysql.createConnection(
     console.log('Connected to the election database.')
   );
 
+
 // Get all candidates
 app.get('/api/candidates', (req, res) => {
     const sql = `SELECT * FROM candidates`;
